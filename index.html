@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyeonseo&#39;s Portfolio</title>
+    <meta name="description" content="AI 활용 소프트웨어 개발 수업을 들으며 공부하고 있습니다!" />
+    <meta name="author" content="HyeonseoGo" />
+    <!-- 소셜 미디어 공유용 메타 태그(Open Graph)-->
+    <meta property="og:title" content="고현서의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포 후 생성된 URL" />
+    <meta property="og:image" content="배포 후 생성된 이미지 URL" />
+    <link rel="shortcut icon" href="./myimages/hs.ico" type="myimages/x-icon" />
+    <link rel="stylesheet" href="./css/mystyle.css" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/133260cff9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header 시작-->
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="./myimages/hs.ico" alt="Logo" />
+        <h1 class="header__logo__title"><a href="#home">Hyeonseo.Go</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#home" class="header__menu__item active">Home</a></li>
+          <li><a href="#about" class="header__menu__item">About</a></li>
+          <li><a href="#skills" class="header__menu__item">Skill</a></li>
+          <li><a href="#work" class="header__menu__item">Portfolio</a></li>
+          <li><a href="#license" class="header__menu__item">License</a></li>
+          <li><a href="#contact" class="header__menu__item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header 끝 -->
+
+<!-- Main 시작 -->
+<main>
+    <!-- Home 시작-->
+    <section id="home">
+      <div class="introduce1">
+        <img class="home__avatar" src="./myimages/hs.jpg" alt="Hyeonseo's profile" />
+        <a class="home__contact" href="#contact">연락처</a>
+      </div>
+        <div class="introduce2">
+            <h2 class="home__title">
+                안녕하세요. <br />
+                <strong class="home__title--string">고현서</strong>입니다.
+              </h2>
+              <p class="home__description">
+                AI 활용 소프트웨어 개발 수업을 들으며 공부하고 있습니다!
+              </p>
+        </div>
+    </section>
+    <!-- Home 끝-->
+
+    <!-- About 시작-->
+    <section id="about" class="section max-container">
+      <h2 class="title">소개</h2>
+      <p class="description">
+        대학에서 제가 가장 어려움을 겪었던 과목 중 하나는 사실 프로그래밍이었습니다. 
+        처음에는 코드의 오류를 찾고, 흐름을 이해하는 데 어려움을 느꼈습니다.  
+        처음에는 잘 되지 않았지만, 시간이 지남에 따라 점차 실력이 향상되는 것을 경험하면서, 꾸준히 노력하는 것만큼 중요한 것이 없다는 것을 깨달았습니다.
+        포기하지 않고 끝까지 도전하며, 데이터 분석가로 발전하고 싶습니다.
+      </p>
+
+      <ul class="skills">
+        <li class="skill">
+          <i class="fa-solid fa-laptop skill__icon"></i>
+          <p class="skill__title">Front-end</p>
+          <p>HTML, CSS, JavaScript, Node.js, React</p>
+        </li>
+        <li class="skill">
+          <i class="fa-solid fa-mobile skill__icon"></i>
+          <p class="skill__title">Mobile</p>
+          <p>Android, IOS, Kotlin, React-Native</p>
+        </li>
+        <li class="skill">
+          <i class="fa-solid fa-robot skill__icon"></i>
+          <p class="skill__title">AI</p>
+          <p>Tensorflow, Python, Pytorch, Numpy</p>
+        </li>
+      </ul>
+
+      <ul class="jobs">
+        <li class="job">
+          <img class="job__img" src="./myimages/konkuk.jpg" alt="konkuk" />
+          <div>
+            <p class="job__name">건국대학교사범대학부속고등학교</p>
+            <p class="job__period">2017~2020</p>
+          </div>
+        </li>
+        <li class="job">
+          <img class="job__img" src="./myimages/kongju.png" alt="kongju" />
+          <div>
+            <p class="job__name">국립공주대학교 스마트정보기술공학과</p>
+            <p class="job__period">2020~2024</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- About 끝-->
+
+    <!--skills 시작-->
+    <section id="skills" class="section">
+      <div class="max-container">
+      <h2 class="title">기술</h2>
+      <p class="description">언어 및 도구</p>
+      <p>
+        제가 다룰 수 있는 언어&도구들 입니다!
+      </p>
+      <div class="tools">
+        <section class="tools__coding">
+          <h3 class="tools__title">언어</h3>
+          <ul>
+            <li class="bar">
+              <div class="bar_metadata">
+                <span>HTML</span><span>100%</span>
+              </div>
+              <div class = "bar__bg">
+                  <div class = "bar__value" style="width: 100%">
+              </div>
+          </div>
+            </li>
+            <li class="bar">
+              <div class="bar_metadata"><span>CSS</span><span>90%</span></div>
+              <div class = "bar__bg"><div class = "bar__value" style="width: 90%"></div></div>
+            </li>
+            <li class="bar">
+              <div class="bar_metadata"><span>JavaScript</span><span>80%</span></div>
+              <div class = "bar__bg"><div class = "bar__value" style="width: 80%"></div></div>
+            </li>
+            <li class="bar">
+              <div class="bar_metadata"><span>Java</span><span>70%</span></div>
+              <div class = "bar__bg"><div class = "bar__value" style="width: 70%"></div></div>
+            </li>
+            <li class="bar">
+              <div class="bar_metadata"><span>Python</span><span>90%</span></div>
+              <div class = "bar__bg"><div class = "bar__value" style="width: 90%"></div></div>
+            </li>
+          </ul>
+        </section>
+        <section class="tools__tools">
+            <h3 class="tools__title">도구</h3>
+            <ul>
+              <li>Visual Studio Code</li>
+              <li>IntelliJ</li>
+              <li>Colab</li>
+              <li>Jupyter</li>
+              <li>Xcode</li>
+            </ul>
+          </section>
+
+          <section class="tools__etc">
+            <h3 class="tools__title">기타</h3>
+            <ul>
+              <li>Git</li>
+              <li>SLACK</li>
+              <li>Math</li>
+            </ul>
+          </section>
+        </div>
+    </div>
+      </section>
+
+      <!--skill 끝-->
+
+<!--work 시작-->
+<section id="work">
+  <h2>포트폴리오</h2>
+  <p>Projects</p>
+  <ul>
+    <li>
+      <button>ALL <span>10</span></button>
+    </li>
+    <li>
+      <button>Front-end <span>3</span></button>
+    </li>
+    <li>
+      <button>Mobile <span>3</span></button>
+    </li>
+    <li>
+      <button>AI <span>4</span></button>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        <img src="./images/" alt="project 이미지" />
+        <div>
+          <h3>Project #1</h3>
+          <p>티맵</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+</section>
+<!--work 끝-->
+
+<!--license 시작-->
+<section id="license">
+  <h2>자격증</h2>
+  <p>국가 기술 자격증</p>
+  <ul>
+    <li>
+      <img src="./images/" alt="정보처리기사 자격증" />
+      <div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Suscipit quas exercitationem accusamus! Cum quo suscipit dolorum
+          maiores veritatis facilis beatae pariatur assumenda quibusdam
+          fugiat alias unde, veniam voluptate quasi culpa.
+        </p>
+        <p><a href="#"></a>한국산업인력공단</p>
+      </div>
+    </li>
+    <li>
+      <img src="./images/" alt="ADSP 자격증" />
+      <div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Suscipit quas exercitationem accusamus! Cum quo suscipit dolorum
+          maiores veritatis facilis beatae pariatur assumenda quibusdam
+          fugiat alias unde, veniam voluptate quasi culpa.
+        </p>
+        <p><a href="#"></a>한국데이터산업진흥원</p>
+      </div>
+    </li>
+    <li>
+      <img src="./images/" alt="SQLD 자격증" />
+      <div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Suscipit quas exercitationem accusamus! Cum quo suscipit dolorum
+          maiores veritatis facilis beatae pariatur assumenda quibusdam
+          fugiat alias unde, veniam voluptate quasi culpa.
+        </p>
+        <p><a href="#"></a>한국데이터산업진흥원</p>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- license 끝-->
+
+<!--Arrow UP 시작-->
+<aside>
+  <a href="#home" title="위로">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+</aside>
+<!--Arrow UP 끝-->
+</main>
+
+<!-- Main 끝 -->
+
+      <!--Footer 시작-->
+    <footer class="contact">
+      <h2>연락주세요!</h2>
+      <p>hyeon@naver.com</p>
+      <ul>
+        <li>
+          <a href="https://github.com/hyeonseogo" target="_blank" title="깃허브"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/hyeonseogo" target="_blank" title="깃허브"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+      <p>&copy; Hyeon - All rights reserved</p>
+    </footer>
+
+    <!--Footer 끝-->
+  </body>
+</html>
