@@ -384,7 +384,7 @@ button:focus {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
 }
-.license__buble_name {
+.license__bubble__name {
   color: var(--color-accent);
   font-weight: bold;
   filter: brightness(70%);
