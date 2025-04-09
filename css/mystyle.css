@@ -112,6 +112,46 @@ button:focus {
   border-radius: 1rem;
   border-bottom: 1px solid var(--color-accent);
 }
+/* 테블릿 */
+@media (max-width: 1024px) {
+  .header__logo__title {
+    font-size: 1.5rem;
+  }
+  .header__menu__item {
+    padding: 6px 12px;
+    font-size: 0.95rem;
+  }
+}
+/* 모바일 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+  .header__logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header__menu {
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .header__menu__item {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .header__menu__item:hover {
+    background-color: var(--color-primary-varient);
+  }
+  .header__menu__item:active {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+  }
+}
 
 /*Home*/
 #home {
@@ -161,6 +201,48 @@ button:focus {
   background-color: transparent;
   color: var(--color-text);
   outline: 2px solid var(--color-accent);
+}
+/* 태블릿 */
+@media (max-width: 1024px) {
+  #home {
+    padding: 8rem 1rem 4rem;
+  }
+  .home__avatar {
+    width: 200px;
+    height: 200px;
+  }
+  .home__title {
+    font-size: 2.5rem;
+  }
+  .home__description {
+    font-size: 1.3rem;
+  }
+  .home__contact {
+    margin: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+/* 모바일 */
+@media (max-width: 768px) {
+  #home {
+    padding: 7rem 1rem 3rem;
+  }
+  .home__avatar {
+    width: 160px;
+    height: 160px;
+  }
+  .home__title {
+    font-size: 2rem;
+  }
+  .home__description {
+    font-size: 1.1rem;
+  }
+  .home__contact {
+    margin: 1rem auto;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
 }
 
 /* about */
@@ -222,6 +304,54 @@ button:focus {
   font-size: 0.8rem;
   text-align: center;
 }
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .skill {
+    width: 80%;
+    text-align: center;
+  }
+  .jobs {
+    gap: 8rem;
+  }
+}
+/* 모바일 */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .skill {
+    width: 90%;
+    padding: 1.5rem 1rem;
+  }
+  .skill__icon {
+    font-size: 3rem;
+  }
+  .skill__title {
+    font-size: 1.3rem;
+  }
+  .jobs {
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .job__img {
+    width: 120px;
+    height: 120px;
+  }
+  .job__name {
+    font-size: 1rem;
+  }
+  .job__period {
+    font-size: 0.75rem;
+  }
+}
 
 /* skills */
 #skills {
@@ -230,7 +360,9 @@ button:focus {
 }
 .tools {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 6fr 4fr;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
@@ -269,13 +401,13 @@ button:focus {
   padding: 1rem;
   background-color: var(--color-primary);
   filter: brightness(150%);
-  border-radius: 3rem;
+  border-radius: 1rem;
 }
 .tools__etc {
   padding: 1rem;
   background-color: var(--color-primary);
   filter: brightness(150%);
-  border-radius: 3rem;
+  border-radius: 1rem;
 }
 
 /* work */
@@ -373,11 +505,20 @@ button:focus {
 }
 
 /* license */
+#license {
+  background-color: var(--color-primary-varient);
+  color: white;
+}
 .licenses {
   margin: 3rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
 }
 .license {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  row-gap: 1.5rem;
   gap: 2rem;
   align-items: center;
   margin-bottom: 2rem;
@@ -386,15 +527,17 @@ button:focus {
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 8px white;
+  margin: 0 auto;
 }
 .license__bubble {
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  box-shadow: var(--color-text) 0px 3px 8px;
+  background-color: var(--color-primary);
 }
 .license__bubble__name {
-  color: var(--color-accent);
+  color: var(--color-accent-varient);
   font-weight: bold;
   filter: brightness(70%);
 }
