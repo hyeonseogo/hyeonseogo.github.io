@@ -19,9 +19,9 @@
     <meta property="og:description" content="안녕하세요! 고현서입니다." />
     <meta
       property="og:image"
-      content="https://hyeonseogo.github.io/myimages/hs.jpg"
+      content="https://hyeonseogo.github.io/myimages/lk.jpg"
     />
-    <link rel="shortcut icon" href="./myimages/hs.ico" type="myimages/x-icon" />
+    <link rel="shortcut icon" href="./myimages/lk.ico" type="myimages/x-icon" />
     <link rel="stylesheet" href="./css/mystyle.css" />
 
     <!--Font Awesome-->
@@ -31,12 +31,13 @@
     ></script>
     <script defer src="./js/main.js"></script>
     <script defer src="./js/projects.js"></script>
+    <script defer src="./js/license.js"></script>
   </head>
   <body>
     <!--Header 시작-->
     <header class="header">
       <div class="header__logo">
-        <img class="header__logo__img" src="./myimages/hs.ico" alt="Logo" />
+        <img class="header__logo__img" src="./myimages/lk.ico" alt="Logo" />
         <h1 class="header__logo__title"><a href="#home">Hyeonseo.Go</a></h1>
       </div>
       <nav class="header__nav">
@@ -62,7 +63,7 @@
         <div class="home__container">
           <img
             class="home__avatar"
-            src="./myimages/hs.jpg"
+            src="./myimages/lk.jpg"
             alt="Hyeonseo's profile"
           />
           <h2 class="home__title">
@@ -84,17 +85,17 @@
 
         <ul class="jobs">
           <li class="job">
-            <img class="job__img" src="./myimages/konkuk.jpg" alt="konkuk" />
+            <img class="job__img" src="./myimages/munji.jpg" alt="munji1" />
             <div>
-              <p class="job__name">건국대학교사범대학부속고등학교</p>
-              <p class="job__period">2017~2020</p>
+              <p class="job__name">OO 회사</p>
+              <p class="job__period">2000~3000</p>
             </div>
           </li>
           <li class="job">
-            <img class="job__img" src="./myimages/kongju.png" alt="kongju" />
+            <img class="job__img" src="./myimages/munji.jpg" alt="munji2" />
             <div>
-              <p class="job__name">국립공주대학교 스마트정보기술공학과</p>
-              <p class="job__period">2020~2024</p>
+              <p class="job__name">OO 회사</p>
+              <p class="job__period">3000~4000</p>
             </div>
           </li>
         </ul>
@@ -338,12 +339,14 @@
         <div class="max-container">
           <h2 class="title">자격증</h2>
           <p class="description">국가 기술 자격증</p>
+          <p>자격증 이미지를 클릭하면 자세한 내용을 확인할 수 있어요!</p>
           <ul class="licenses">
             <li class="license">
               <img
                 class="license__img"
                 src="./myimages/license.jpg"
                 alt="정보처리기사 자격증"
+                data-license="l1"
               />
               <div class="license__bubble">
                 <p>
@@ -359,6 +362,7 @@
                 class="license__img"
                 src="./myimages/license.jpg"
                 alt="ADSP 자격증"
+                data-license="l2"
               />
               <div class="license__bubble">
                 <p>
@@ -374,6 +378,7 @@
                 class="license__img"
                 src="./myimages/license.jpg"
                 alt="SQLD 자격증"
+                data-license="l3"
               />
               <div class="license__bubble">
                 <p>
